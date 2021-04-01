@@ -32,3 +32,8 @@ let update = function () {
     $("#10").val("");
     localStorage.setItem(10, "");
   });
+
+  $("#11AMClearBTN").click(function () {
+    $("#11").val("");
+    localStorage.setItem(11, "");
+  });
