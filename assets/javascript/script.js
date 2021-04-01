@@ -67,3 +67,30 @@ let update = function () {
     $("#17").val("");
     localStorage.setItem(17, "");
   });
+
+  const rows = $(".row");
+let currentHour = parseInt(moment().hours());
+
+Array.from(rows).forEach((row) => {
+  let rowIdString = row.id,
+    rowHour;
+  if (rowIdString) {
+    rowHour = parseInt(rowIdString);
+  }
+  if (rowHour < 8) {
+    rowHour += 12;
+  }
+  if (rowHour) {
+    if (currentHour === rowHour) {
+      setColor(row, "lightgreen");
+    } else if (currentHour < rowHour) {
+      setColor(row, "lightgrey");
+    } else if (currentHour > rowHour) {
+      setColor(row, "grey");
+    }
+  }
+});
+
+function setColor(element, color) {
+  element.style.backgroundColor = color;
+}
