@@ -57,3 +57,8 @@ let update = function () {
     $("#15").val("");
     localStorage.setItem(15, "");
   });
+
+  $("#4PMClearBTN").click(function () {
+    $("#16").val("");
+    localStorage.setItem(16, "");
+  });
