@@ -82,11 +82,11 @@ Array.from(rows).forEach((row) => {
   }
   if (rowHour) {
     if (currentHour === rowHour) {
-      setColor(row, "lightgreen");
+      setColor(row, "lightcoral");
     } else if (currentHour < rowHour) {
-      setColor(row, "lightgrey");
+      setColor(row, "forestgreen");
     } else if (currentHour > rowHour) {
-      setColor(row, "grey");
+      setColor(row, "darkgray");
     }
   }
 });
