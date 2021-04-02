@@ -13,17 +13,21 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: black;
+  color: white;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+textarea::placeholder {
+  color: white;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: white;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #2e285d;
 }
 
 .description {
@@ -32,7 +36,6 @@ textarea {
 
 .time-block {
   text-align: center;
-  border-radius: 15px;
   padding-top: 30px;
 }
 
@@ -40,7 +43,7 @@ textarea {
   font-family: 'Newsreader';
   white-space: pre-wrap;
   height: 80px;
-  color: black;
+  color: white;
 }
 
 .saveBtn {
