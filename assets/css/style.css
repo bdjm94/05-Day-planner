@@ -1,5 +1,5 @@
 body {
-  font-family: 'Newsreader', sans-serif;
+  font-family: 'DM Serif Text', sans-serif;
   font-size: 16px;
   line-height: 1;
   background-image: url('https://images.unsplash.com/photo-1498081959737-f3ba1af08103?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
@@ -9,6 +9,7 @@ body {
 }
 
 textarea {
+  font-family: 'Newsreader';
   background: transparent;
   border: none;
   resize: none;
@@ -35,32 +36,13 @@ textarea {
 }
 
 .row {
+  font-family: 'Newsreader';
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
   color: black;
 }
 
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
 
 .saveBtn {
   border-left: 1px solid black;
