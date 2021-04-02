@@ -86,7 +86,7 @@ Array.from(rows).forEach((row) => {
     } else if (currentHour < rowHour) {
       setColor(row, "forestgreen");
     } else if (currentHour > rowHour) {
-      setColor(row, "darkgray");
+      setColor(row, "lightgray");
     }
   }
 });
